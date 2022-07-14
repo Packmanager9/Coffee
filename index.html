@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+                <li hidden> WASD to move the cup.</li>
+                <li hidden> Q/E  to change cup size.</li>
+                <li hidden> Press Y to reset the ball, but not the sliders.</li>
+                <button hidden id = 'reset'>Reset Cup</button>
+                <button hidden id = 'pause'>Pause</button>
+                <div class="slidecontainer">
+                <li hidden> Grip</li>
+                <input hidden type="range" step=".04" min="0" max="3" value="1.5" class="slider" id="cohesive">
+                <li hidden> Length</li>
+                <input hidden type="range" step=".5" min="1" max="100" value="30" class="slider" id="length">
+                <li hidden> Gravity</li>
+                <input hidden type="range" step=".1" min="-2" max="2" value="1.5" class="slider" id="gravity">
+                <li hidden> Mode</li>
+                <input hidden type="range" step="2" min="-1" max="1" value="-1" class="slider" id="mode">
+                <li hidden> Color Rate</li>
+                <input hidden type="range" step="1" min="1" max="2000" value="20" class="slider" id="colorrate">
+                <li hidden> Droplets</li>
+                <input hidden type="range" step="1" min="0" max="1500" value="330" class="slider" id="drops">
+                <li hidden> Drop Size</li>
+                <input hidden type="range" step=".1" min=".1" max="5" value="1" class="slider" id="size">
+                <li hidden> Animation</li>
+                <input hidden type="range" step=".05" min=".1" max="2" value="1.1" class="slider" id="speedtrap">
+                <li hidden> Link Cap</li>
+                <input hidden type="range" step="1" min="0" max="10" value="5" class="slider" id="linklength">
+
+            <div id="dog-image-container">
+
+                <canvas id="canvas" width="800" height="800"></canvas>
+
+                <script src="pourcup27.js"></script>
+        </div>
+</html>
